@@ -1,0 +1,48 @@
+.settings-panel {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.settings-panel > * {
+    width: 100%;
+}
+
+textarea {
+    height: 150px;
+}
+
+.animal-pref {
+    padding: 1.5em 0 2em 0;
+    font-size: 20px;
+}
+
+.age-pref {
+    font-size: 20px;
+    padding-bottom: 2em;
+}
+
+.animal-toggle {
+    float: right;
+}
+
+:host ::ng-deep .mat-form-field-infix {
+    padding: 0 0 0.5em 0 !important;
+}
+
+.age-input,
+input {
+    float: right;
+    height: 20px;
+    width: 100px;
+}
+
+.profile-text {
+    resize: none;
+}
+
+button {
+    margin-top: 1em;
+}

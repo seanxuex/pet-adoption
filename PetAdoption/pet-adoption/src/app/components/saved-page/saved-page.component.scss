@@ -1,0 +1,41 @@
+.saved-panel {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.list-card {
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.empty-text {
+    text-align: center;
+}
+
+.profile-box {
+    height: 70px; 
+    resize: none;
+}
+
+.mat-form-field-type-mat-native-select
+.mat-form-field-disabled 
+.mat-form-field-infix::after, 
+.mat-input-element:disabled {
+    color: black;
+}
+
+:host ::ng-deep .mat-form-field-flex {
+    display: inline;
+}
+
+:host ::ng-deep .mat-form-field-infix {
+    padding: 0 0 0.5em 0 !important;
+}
+
+.pop-up {
+    overflow: hidden !important;
+}

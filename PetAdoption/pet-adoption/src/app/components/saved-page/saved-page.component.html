@@ -1,0 +1,30 @@
+<mat-card class="saved-panel">
+  <font class="empty-text" size="6" *ngIf="savedList.length == 0">
+    It looks empty in here, <br/>
+    Don't you like pets?
+  </font>
+  <mat-list *ngIf="savedList.length > 0">
+      <mat-card class="list-card" *ngFor="let petProfile of savedList" (click)="popUpProfile(petProfile, popUpProfileTemplate)">
+        <mat-list-item>
+            <img matListAvatar src={{petProfile.img}}>
+            <h1 matLine> {{ petProfile.name }}, {{ petProfile.age }}yr, {{ petProfile.sex }} </h1>
+            <p matLine>
+              <span> {{petProfile.profile}} </span>
+            </p>
+        </mat-list-item>
+      </mat-card>
+  </mat-list>
+</mat-card>
+
+
+<ng-template #popUpProfileTemplate class="pop-up">
+  <img src={{currentImg}} width="320px">
+  <br/>
+  <font size="5">
+    {{ currentName }}, 
+    {{ currentAge }}yr,
+    {{ currentSex }}
+  </font>
+  <br/>
+  {{ currentProfile }}
+</ng-template>

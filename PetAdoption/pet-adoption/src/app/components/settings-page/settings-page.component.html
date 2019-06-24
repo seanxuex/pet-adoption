@@ -1,0 +1,31 @@
+<mat-card class="settings-panel">
+  <font size="6">
+    Adopter Profile
+  </font>
+  <mat-form-field appearance="outline">
+    <textarea matInput class="profile-text" name="profile-text" [(ngModel)]="profile"></textarea>
+  </mat-form-field>
+  <font size="6">
+      Preferences
+  </font>
+  <div class="animal-pref">
+    <span>
+        Animal
+    </span>
+    <div class="animal-toggle">
+      Cat <mat-slide-toggle #t [checked]="initialAnimalType == 'dog'"></mat-slide-toggle> Dog
+    </div>
+  </div>
+  <div class="age-pref">
+    <span>
+        Age
+    </span>
+    <mat-form-field appearance="outline" class="age-input">
+        <input matInput name="age-max" type="number" placeholder="max" min="0" [(ngModel)]="ageMax"/>
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="age-input">
+        <input matInput name="age-min" type="number" placeholder="min" min="0" [(ngModel)]="ageMin"/>
+    </mat-form-field>
+  </div>
+  <button mat-button color="primary" (click)="saveSetting()">Save Setting</button>
+</mat-card>

@@ -1,0 +1,24 @@
+<mat-card *ngIf="currentPetProfile != null"
+          class="search-panel"
+          [@cardAnimator]="animationState"
+          (@cardAnimator.done)="resetAnimationState()"
+          (swipeleft)="disLike()"
+          (swiperight)="like()">
+  <div class="img-div">
+    <img src={{currentImg}} width="95%;">
+  </div>
+  <font size="5">
+    {{ currentName }}, 
+    {{ currentAge }}yr,
+    {{ currentSex }}
+  </font>
+  <mat-form-field appearance="outline">
+    <textarea matInput class="profile-box" [value]="currentProfile" disabled="true"></textarea>
+  </mat-form-field>
+</mat-card>
+
+<mat-card *ngIf="currentPetProfile == null" class="search-panel">
+  <font class="empty-text" size="6">
+    It looks like there is not a single pet fits your preferences
+  </font>
+</mat-card>

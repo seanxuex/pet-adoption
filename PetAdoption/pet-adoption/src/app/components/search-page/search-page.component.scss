@@ -1,0 +1,39 @@
+.search-panel {
+    margin: 0 auto;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+:host ::ng-deep .mat-form-field-infix {
+    padding: 0 0 0.5em 0 !important;
+}
+
+.mat-form-field-type-mat-native-select
+.mat-form-field-disabled 
+.mat-form-field-infix::after, 
+.mat-input-element:disabled {
+    color: black;
+}
+
+.profile-box {
+    height: 80px; 
+    resize: none;
+}
+
+.img-div {
+    height: 360px;
+}
+
+img {
+    pointer-events:none;
+    max-height: 360px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.empty-text {
+    text-align: center;
+}
