@@ -1,5 +1,11 @@
 # PetAdoption
 
+#############################
+Due to many years not updating this project iteratively, many dependencies are out of sync, and/or deprecated.
+This project will not run anymore.
+But the code is still a representation of the author's work.
+#############################
+
 ## Prerequirement
 
 Make sure you have Node.js installed globally. Download from `https://nodejs.org/en/`.
